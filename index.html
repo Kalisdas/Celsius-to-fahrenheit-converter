@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celcious to fahrenheit converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="body">
+    <div class="box"><h2>Celcious to fahrenheit</h2>
+        <input type="text" id="input" placeholder="Celcious to fahrenheit">
+             <div>
+             <button type="submit" id="btn" onclick="convert()">convert</button>
+            </div> 
+            <div id="result"></div>
+    </div>
+    <script>
+        function convert(){
+       const celVal = Number(document.getElementById("input").value)
+       const farVal = celVal*1.8 + 32
+       const result =document.getElementById("result")
+       result.innerHTML = farVal
+        }
+    </script>
+
+</body>
+</html>
